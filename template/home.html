@@ -95,7 +95,7 @@
                     <p>The Joy of Volunteering</p>
                     <button class="btn btn-primary explore-btn">Explore</button>
                   </div>
-                  <img style="border-radius:20px;"src="{% static 'images/home/group.jpeg' %}" class="hands1" alt="...">
+                    <img style="border-radius:20px;" src="{% static 'images/home/group.jpeg' %}" class="hands1" alt="...">
                 </div>
               </div>
             </div>
@@ -110,7 +110,7 @@
                     <p>The Joy of Volunteering</p>
                     <button class="btn btn-primary explore-btn">Explore</button>
                   </div>
-                    <img style="border-radius:20px;"src="{% static 'images/home/groupnew.png' %}" class="hands2" alt="...">
+                    <img style="border-radius:20px;" src="{% static 'images/home/groupnew.png' %}" class="hands2" alt="...">
                 </div>
               </div>
             </div>
@@ -128,7 +128,7 @@
       <div class="container">
         <div class="d-lg-flex justify-content-between align-items-center" style="position: relative;">
           <div>
-            <h1 class="text-center mb-5 about-us-head">About Us</h1>
+            <h1 class="text-center mb-5 mt-5 about-us-head">About Us</h1>
             <h2 class="mb-4 about-us-head">We are the Largest Student Activities Group in the world</h2>
             <p class=""><span class="fw-bold">LINK (Local Integrated Network of Kerala IEEE Students)</span> is an innovative concept that originated in IEEE Kerala Section in India, aimed at networking student branches in an effective way, thereby increasing the value in IEEE Student membership. LINK was formally inaugurated by past IEEE President Mr. Cleon Anderson in January 2005.</p> 
   
@@ -149,7 +149,7 @@
     <section class="video-section d-flex flex-column align-items-center justify-content-center">
       <h1 class="news">IEEE LINK</h1>
       <h1 class="news2">ABOUT US</h1>
-      <div class="p-5 video-div">
+      <div class="p-5 video-div container">
         <iframe class="video-player" src="https://www.youtube.com/embed/qfd_N8UG8Qg" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
       <h4 class="text-center mt-5 video-caption fw-bold"><img class="quote-img" src="{% static 'images/home/quote1.png' %}" alt="">  Ensemble the Student Branches and spread the value of IEEE through out the geographical span.<img class="quote-img" src="{% static 'images/home/quote2.png' %}" alt=""></h4>
@@ -163,7 +163,7 @@
         <h1 class="news2">LINK</h1>
         <div class="container">
             {% comment %} <center><h2 class="fw-bold">LINK Ensembles the Student Branches & spread the value of IEEE through out the geographical span.</h2></center><br/> {% endcomment %}
-            <div class="row cards align-items-center">
+            <div class="row cards align-items-center justify-content-center">
             <div class="col-md">
                 <div class="card award-card">
                 <div class="card-body text-center">
@@ -464,11 +464,11 @@
           <h2 class="mb-5 fw-bolder">Latest Updates</h2>
         </div>
             <div class="container mt-5">
-                <div class="row cards align-items-center">
+                <div class="row">
                     {% for item in posts %}
-                    <div class="col-lg">
+                    <div class="col-lg d-flex align-items-center justify-content-center">
                       <a class="text-decoration-none text-black" href="/post/{{item.connector}}">
-                        <div class="card award-card my-1">
+                        <div class="card award-card next-card my-1">
                         <div class="card-body award-card-body text-center">
                             <div class="mb-3 next-image-div">
                             <img src="{{item.image.url}}" class="next-image" alt="">
