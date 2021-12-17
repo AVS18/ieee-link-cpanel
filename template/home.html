@@ -28,7 +28,7 @@
     </div>
 
     <!-- Header -->
-    <header id="header">
+    <header id="header" class="header bg-white">
       <nav class="navbar navbar-reverse navbar-expand-lg flex-row">
         <div class="container-lg">
           <a class="navbar-brand" href="/">
@@ -122,7 +122,7 @@
 
     <!-- About Us -->
 
-    <section class="about-section mt-0 mb-0">
+    <section class="about-section mt-0 mb-0 pt-5">
       <h1 class="news">ABOUT</h1>
       <h1 class="news2">IEEE LINK</h1>
       <div class="container">
@@ -464,11 +464,11 @@
           <h2 class="mb-5 fw-bolder">Latest Updates</h2>
         </div>
             <div class="container mt-5">
-                <div class="row cards align-items-center">
+                <div class="row">
                     {% for item in posts %}
-                    <div class="col-lg">
+                    <div class="col-lg d-flex align-items-center justify-content-center">
                       <a class="text-decoration-none text-black" href="/post/{{item.connector}}">
-                        <div class="card award-card my-1">
+                        <div class="card award-card next-card my-1">
                         <div class="card-body award-card-body text-center">
                             <div class="mb-3 next-image-div">
                             <img src="{{item.image.url}}" class="next-image" alt="">
